@@ -1,0 +1,230 @@
+<head>
+    <style>
+        .review-form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .control {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .radio {
+            display: none;
+        }
+
+        .rating-stars {
+            direction: rtl;
+            font-size: 24px;
+            unicode-bidi: bidi-override;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .rating-stars label {
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            color: #ddd; /* Default gray color */
+        }
+
+        .rating-stars input:checked ~ label {
+            color: #ff0000; /* Red color when checked */
+        }
+
+        .rating-stars input:hover ~ label {
+            color: #ff0000; /* Red color on hover */
+        }
+
+        .actions-toolbar {
+            text-align: right;
+        }
+
+        .button,
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover,
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .review-field-nickname input,
+        .review-field-summary input {
+            width: calc(100% - 22px); /* Adjust width to account for padding and border */
+        }
+    </style>
+</head>
+<body>
+    <div class="block-content">
+        <form action="https://www.mytek.tn/review/product/post/id/44504/" 
+              class="review-form" 
+              method="post" 
+              id="review-form" 
+              data-role="product-review-form" 
+              data-bind="scope: 'review-form'" 
+              novalidate="novalidate">
+      
+          <input name="form_key" type="hidden" value="6Fnog4WpGJD94HHB">
+      
+          <fieldset class="fieldset review-fieldset" data-hasrequired="* Champs obligatoires">
+            <legend class="legend review-legend">
+              <span>Give your opinion:</span>
+              <strong>On our films</strong>
+            </legend>
+            <br>
+            <span id="input-message-box"></span>
+      
+            <fieldset class="field required review-field-ratings">
+              <legend class="label"><span>Note</span></legend>
+              <br>
+              <div class="control">
+                <div class="nested" id="product-review-table">
+                  
+                  <!-- Value Rating -->
+                  <div class="field choice review-field-rating">
+                    <label class="label" for="Value_rating"><span>Value</span></label>
+                    <div class="control review-control-vote rating-stars">
+                      <!-- Radio Buttons for Value -->
+                      <input type="radio" name="ratings[2]" id="Value_1" value="6" class="radio" aria-required="true">
+                      <label for="Value_1" title="1 star">★</label>
+                      <input type="radio" name="ratings[2]" id="Value_2" value="7" class="radio" aria-required="true">
+                      <label for="Value_2" title="2 stars">★</label>
+                      <input type="radio" name="ratings[2]" id="Value_3" value="8" class="radio" aria-required="true">
+                      <label for="Value_3" title="3 stars">★</label>
+                      <input type="radio" name="ratings[2]" id="Value_4" value="9" class="radio" aria-required="true">
+                      <label for="Value_4" title="4 stars">★</label>
+                      <input type="radio" name="ratings[2]" id="Value_5" value="10" class="radio" aria-required="true">
+                      <label for="Value_5" title="5 stars">★</label>
+                    </div>
+                  </div>
+      
+                  <!-- Quality Rating -->
+                  <div class="field choice review-field-rating">
+                    <label class="label" for="Quality_rating"><span>Quality</span></label>
+                    <div class="control review-control-vote rating-stars">
+                      <!-- Radio Buttons for Quality -->
+                      <input type="radio" name="ratings[1]" id="Quality_1" value="1" class="radio" aria-required="true">
+                      <label for="Quality_1" title="1 star">★</label>
+                      <input type="radio" name="ratings[1]" id="Quality_2" value="2" class="radio" aria-required="true">
+                      <label for="Quality_2" title="2 stars">★</label>
+                      <input type="radio" name="ratings[1]" id="Quality_3" value="3" class="radio" aria-required="true">
+                      <label for="Quality_3" title="3 stars">★</label>
+                      <input type="radio" name="ratings[1]" id="Quality_4" value="4" class="radio" aria-required="true">
+                      <label for="Quality_4" title="4 stars">★</label>
+                      <input type="radio" name="ratings[1]" id="Quality_5" value="5" class="radio" aria-required="true">
+                      <label for="Quality_5" title="5 stars">★</label>
+                    </div>
+                  </div>
+      
+                  <!-- Price Rating -->
+                  <div class="field choice review-field-rating">
+                    <label class="label" for="Price_rating"><span>Price</span></label>
+                    <div class="control review-control-vote rating-stars">
+                      <!-- Radio Buttons for Price -->
+                      <input type="radio" name="ratings[3]" id="Price_1" value="11" class="radio" aria-required="true">
+                      <label for="Price_1" title="1 star">★</label>
+                      <input type="radio" name="ratings[3]" id="Price_2" value="12" class="radio" aria-required="true">
+                      <label for="Price_2" title="2 stars">★</label>
+                      <input type="radio" name="ratings[3]" id="Price_3" value="13" class="radio" aria-required="true">
+                      <label for="Price_3" title="3 stars">★</label>
+                      <input type="radio" name="ratings[3]" id="Price_4" value="14" class="radio" aria-required="true">
+                      <label for="Price_4" title="4 stars">★</label>
+                      <input type="radio" name="ratings[3]" id="Price_5" value="15" class="radio" aria-required="true">
+                      <label for="Price_5" title="5 stars">★</label>
+                    </div>
+                  </div>
+      
+                </div>
+                <input type="hidden" name="validate_rating" class="validate-rating" aria-required="true">
+              </div>
+            </fieldset>
+      
+            <!-- Nickname Field -->
+            <div class="field review-field-nickname required">
+              <label for="nickname_field" class="label"><span>Nom</span></label>
+              <div class="control">
+                <input type="text" name="nickname" id="nickname_field" class="input-text" aria-required="true">
+              </div>
+            </div>
+      
+            <!-- Summary Field -->
+            <div class="field review-field-summary required">
+              <label for="summary_field" class="label"><span>Sommaire</span></label>
+              <div class="control">
+                <input type="text" name="title" id="summary_field" class="input-text" aria-required="true">
+              </div>
+            </div>
+      
+            <!-- Comment Field -->
+            <div class="field review-field-text required">
+              <label for="review_field" class="label"><span>Commentaire</span></label>
+              <div class="control">
+                <textarea name="detail" id="review_field" cols="5" rows="3" aria-required="true"></textarea>
+              </div>
+            </div>
+          </fieldset>
+      
+          <fieldset class="fieldset additional_info"></fieldset>
+      
+          <div class="actions-toolbar review-form-actions">
+            <div class="primary actions-primary">
+              <button type="submit" class="action submit primary"><span>Envoyer</span></button>
+            </div>
+          </div>
+        </form>
+    </div>  
+
+    <script>
+        document.getElementById('review-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Redirect to index3.html
+            window.location.href = 'index3.html';
+        });
+    </script>
+</body>
+
