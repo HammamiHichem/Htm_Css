@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header styling */
+  #header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #header-img {
+    vertical-align: middle;
+  }
+  
+  /* Navigation bar styling */
+  #nav-bar {
+    margin: 10px 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main heading styles */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Form styling */
+  #form {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #email {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background: #555;
+  }
+  
+  /* Video styling */
+  #video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  /* Section styling */
+  section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  b {
+    font-size: 1.2em;
+  }
+  
+  /* Image styling inside list items */
+  a img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  /* Footer styling */
+  #footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+  }
+  
+  #footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .nav-link {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    #email, #submit {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://victoriavynn.com/img/its_me_victoria_vynn.png" alt="Victoria Vynn" height="30"/>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#colors">Colors</a>
+      <a class="nav-link" href="#video">News</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+  
+  <h1>VictoriaVynn</h1>
+  <h2>The Beginning</h2>
+  
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input id="email" type="email" placeholder="Enter your email address" name="email">
+    <input id="submit" type="submit" value="Subscribe">
+  </form>
+
+  <video id="video" width="560" height="315" src="https://victoriavynn.com/video/newsletter_v2.mp4" controls></video>
+  
+  <section id="colors">
+    <ul>
+      <li>
+        <b>Inspirations</b>
+        <div>Discover the most interesting nail art and stay up to date with news and trends.</div>
+      </li>
+      <li>
+        <b>Pure</b>
+        <a href="https://victoriavynn.com/uploads/pictogram1.png" target="_blank">
+          <img src="https://victoriavynn.com/uploads/pictogram1.png" alt="Pure Pictogram">
+        </a>
+        <div>The Pure Creamy Hybrid system comprises creamy hybrid polishes of excellent coverage and durability. It’s a formula with a high safety index, free of an irritating smell and removable with cosmetic alcohol. The short and flat brush, designed especially for the Pure line of products, facilitates even application. The system allows you to create ultra-thin hybrid manicures.</div>
+      </li>
+      <li>
+        <b>Gelpolish</b>
+        <a href="https://victoriavynn.com/en/product/gel-polish-001-flawless-white/187.html" target="_blank">Gel Polish</a>
+        <div>The Gel Polish system comprises classic, durable hybrid polishes cured in UV and LED lamps. The system contains bases and tops of different properties, durability, and finish.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Added missing section for Pricing -->
+  <section id="pricing">
+    <h3>Pricing Information</h3>
+    <p>Here you can find details about the pricing of our products and services.</p>
+  </section>
+
+  <footer id="footer">
+    Privacy<br>
+    Terms<br>
+    Contact
+  </footer>
+</body>
+</html>
